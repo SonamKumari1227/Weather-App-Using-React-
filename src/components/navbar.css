@@ -1,0 +1,42 @@
+/* Navbar.css */
+/* Navbar CSS */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: (to right, rgb(150, 220, 163), rgb(122, 252, 115)); /* Green linear gradient */
+  color: #045123; /* White text color */
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar:hover {
+  background: linear-gradient(to right, #71f277, #4CAF50); /* Adjusted gradient on hover */
+}
+
+.navbar-title {
+  display: inline-block;
+  animation: fadeIn 0.8s ease-out; /* Fade in animation */
+}
+
+.navbar-title h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px; /* Add some letter spacing for a stylish look */
+}
+
+/* Animation for fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

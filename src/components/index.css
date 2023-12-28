@@ -1,0 +1,79 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(150, 220, 163), rgb(122, 252, 115)); /* Dark green gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color:#044104;
+}
+
+/* WeatherApp.css */
+.weather-app-container {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(to right, #0a4716, #4ce08a); /* Green gradient background */
+  color: #002200; /* White text color */
+  font-weight: bold; /* Bold text */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.app-title {
+  font-size: 36px;
+  margin-bottom: 25px;
+  color:#dbffea
+}
+
+.location-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.location-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.location-form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #004d00; /* Dark green button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.weather-info {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  opacity: 0; /* Start with zero opacity for fadeIn animation */
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Animation for Resultant Div */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
